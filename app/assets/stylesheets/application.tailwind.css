@@ -2,12 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-/*
+
 
 @layer components {
   .btn-primary {
     @apply py-2 px-4 bg-blue-200;
   }
+  .h1-header {
+    @apply text-center text-2xl font-serif font-light bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-red-700;
+  }
+  .link-header {
+    @apply font-medium px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900;
+  }
 }
-
-*/

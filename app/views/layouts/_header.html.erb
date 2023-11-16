@@ -1,0 +1,12 @@
+<nav class="flex justify-around items-center p-2"> 
+  <h1 class="h1-header"><%= link_to 'Events', events_path%></h1>    
+  <nav class="flex gap-8 text-center ">
+    <% if current_user %>
+      <%= link_to 'New event', new_event_path, class:"link-header" %>
+      <%= link_to "logout", logout_path, class:"link-header", data: { turbo_method: :delete, turbo_confirm: "Are you sure?" }%>
+      <%= link_to "Profile", user_path(current_user), class:"link-header"%>
+    <% else %>
+      <%= link_to "log_in", login_path %>
+    <% end %>
+  </nav>
+</nav>
